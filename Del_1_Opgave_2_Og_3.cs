@@ -7,7 +7,7 @@ class Node
 {
     public ulong Key;
     public long Value;
-    public Node Next;
+    public Node? Next;
 
     public Node(ulong key, long value)
     {
@@ -34,7 +34,7 @@ class HashTable
     public long Get(ulong x)
     {
         int idx = (int)hashFunc(x);
-        Node current = buckets[idx];
+        Node? current = buckets[idx];
         while (current != null)
         {
             if (current.Key == x) return current.Value;
@@ -48,7 +48,7 @@ class HashTable
     public void Set(ulong x, long v)
     {
         int idx = (int)hashFunc(x);
-        Node current = buckets[idx];
+        Node? current = buckets[idx];
         while (current != null)
         {
             if (current.Key == x) { current.Value = v; return; }
@@ -64,7 +64,7 @@ class HashTable
     public void Increment(ulong x, long d)
     {
         int idx = (int)hashFunc(x);
-        Node current = buckets[idx];
+        Node? current = buckets[idx];
         while (current != null)
         {
             if (current.Key == x) { current.Value += d; return; }
@@ -82,7 +82,7 @@ class HashTable
         long S = 0;
         for (int i = 0; i < buckets.Length; i++)
         {
-            Node current = buckets[i];
+            Node? current = buckets[i];
             while (current != null)
             {
                 S += current.Value * current.Value;
@@ -192,7 +192,7 @@ class Opgave2og3
         }
     }
 
-    static void Main()
+    public static void Run()
     {
         int n = 10_000_000;
 

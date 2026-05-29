@@ -1,17 +1,15 @@
 using System;
 
-class Program2
+class Opgave4og5
 {
-    // p = 2^89 - 1 → vi bruger 25 + 64 bit
+    // p = 2^89 - 1. Vi bruger 25 + 64 bit
     struct U89
     {
         public ulong high; // 25 bit
         public ulong low;  // 64 bit
     }
 
-    // -----------------------------
     // Build 89-bit tal
-    // -----------------------------
     static U89 BuildU89(byte[] b, bool extraBit)
     {
         ulong high = 0;
@@ -32,9 +30,7 @@ class Program2
         return new U89 { high = high, low = low };
     }
 
-    // -----------------------------
     // Mod p = 2^89 - 1
-    // -----------------------------
     static U89 ModP(U89 x)
     {
         ulong overflow = x.high >> 25;
@@ -48,9 +44,7 @@ class Program2
         return x;
     }
 
-    // -----------------------------
     // Addition
-    // -----------------------------
     static U89 Add(U89 a, U89 b)
     {
         a.low += b.low;
@@ -59,9 +53,7 @@ class Program2
         return ModP(a);
     }
 
-    // -----------------------------
     // Multiplikation (a * x + b)
-    // -----------------------------
     static U89 MultiplyAdd(U89 a, ulong x, U89 b)
     {
         ulong low = a.low * x;
@@ -77,17 +69,13 @@ class Program2
         return ModP(res);
     }
 
-    // -----------------------------
     // Multiplikation U89 * ulong
-    // -----------------------------
     static U89 Mul(U89 a, ulong x)
     {
         return MultiplyAdd(a, x, new U89 { high = 0, low = 0 });
     }
 
-    // -----------------------------
     // DINE a0,a1,a2,a3
-    // -----------------------------
     static U89 a0 = BuildU89(new byte[] {
         0b10011010,0b00111110,0b00011110,
         0b00001011,0b01001110,0b11110110,
@@ -116,9 +104,7 @@ class Program2
         0b00100100,0b11100001
     }, false);
 
-    // -----------------------------
     // OPGAVE 4: g(x)
-    // -----------------------------
     static U89 G(ulong x)
     {
         U89 res = a0;
@@ -134,9 +120,7 @@ class Program2
         return res;
     }
 
-    // -----------------------------
     // OPGAVE 5: h og s
-    // -----------------------------
     static int t = 10; // vælg selv
     static ulong mask = (1UL << t) - 1;
 
@@ -157,10 +141,8 @@ class Program2
         return msb ? -1 : 1;
     }
 
-    // -----------------------------
     // TEST
-    // -----------------------------
-    static void Main2()
+    public static void Run()
     {
         ulong x = 123456789;
 

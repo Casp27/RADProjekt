@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-class Program
+class Opgave1
 {
     static int l = 20;
 
@@ -164,6 +164,10 @@ class Program
         Console.WriteLine(sum2);
     }
 
+    public static void Run()
+    {
+        Test(10_000_000);
+    }
 
     // -----------------------------
     // helper
