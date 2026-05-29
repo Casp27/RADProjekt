@@ -1,0 +1,15 @@
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\bin\Debug\net8.0\Implementeringsprojekt.exe
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\bin\Debug\net8.0\Implementeringsprojekt.deps.json
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\bin\Debug\net8.0\Implementeringsprojekt.runtimeconfig.json
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\bin\Debug\net8.0\Implementeringsprojekt.dll
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\bin\Debug\net8.0\Implementeringsprojekt.pdb
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.AssemblyInfoInputs.cache
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.AssemblyInfo.cs
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.csproj.CoreCompileInputs.cache
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.sourcelink.json
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.dll
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\refint\Implementeringsprojekt.dll
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.pdb
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\Implementeringsprojekt.genruntimeconfig.cache
+C:\Users\willi\OneDrive\Skrivebord\RADProjekt\obj\Debug\net8.0\ref\Implementeringsprojekt.dll
