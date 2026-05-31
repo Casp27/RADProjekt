@@ -41,6 +41,14 @@ class Opgave4og5
         if (x.low < overflow)
             x.high++;
 
+        // 0 hvis x==p
+        if (x.high == ((1UL << 25) - 1) && x.low == ulong.MaxValue)
+        {
+            x.high = 0;
+            x.low = 0;
+        }
+
+
         return x;
     }
 
@@ -75,7 +83,6 @@ class Opgave4og5
         return MultiplyAdd(a, x, new U89 { high = 0, low = 0 });
     }
 
-    // DINE a0,a1,a2,a3
     static U89 a0 = BuildU89(new byte[] {
         0b10011010,0b00111110,0b00011110,
         0b00001011,0b01001110,0b11110110,
@@ -107,21 +114,18 @@ class Opgave4og5
     // OPGAVE 4: g(x)
     static U89 G(ulong x)
     {
-        U89 res = a0;
+        U89 y = a3;
 
-        ulong x1 = x;
-        ulong x2 = x * x;
-        ulong x3 = x2 * x;
+        // Algoritme 1
+        y = MultiplyAdd(y, x, a2); // y = y*x + a2 mod p
+        y = MultiplyAdd(y, x, a1); // y = y*x + a1 mod p
+        y = MultiplyAdd(y, x, a0); // y = y*x + a0 mod p
 
-        res = Add(res, Mul(a1, x1));
-        res = Add(res, Mul(a2, x2));
-        res = Add(res, Mul(a3, x3));
-
-        return res;
+        return y;
     }
 
     // OPGAVE 5: h og s
-    static int t = 10; // vælg selv
+    static int t = 10;
     static ulong mask = (1UL << t) - 1;
 
     // h(x) = nederste t bits
@@ -144,7 +148,7 @@ class Opgave4og5
     // TEST
     public static void Run()
     {
-        ulong x = 123456789;
+        ulong x = 1000000;
 
         Console.WriteLine("g(x) low: " + G(x).low);
         Console.WriteLine("h(x): " + H(x));
