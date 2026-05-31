@@ -166,7 +166,7 @@ class Opgave1
 
     public static void Run()
     {
-        Test(10_000_000);
+        Test(1000000);
     }
 
     // -----------------------------
