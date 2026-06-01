@@ -116,7 +116,7 @@ class Opgave8
 
         Console.WriteLine("--- Running Opgave 8 ---");
 
-        var stream = Stream.CreateStream(n, l);
+        var stream = Opgave2og3.CreateStream(n, l);
 
         foreach (int t in ts)
         {

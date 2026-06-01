@@ -119,7 +119,7 @@ class Opgave7
 
         List<long> Xs = new List<long>();
 
-        var stream = Stream.CreateStream(n, l);
+        var stream = Opgave2og3.CreateStream(n, l);
         
         for (int i = 0; i < experiments; i++)
         {
