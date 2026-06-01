@@ -165,7 +165,7 @@ class Opgave2og3
         return ModP(res);
     }
 
-    static IEnumerable<Tuple<ulong, int>> CreateStream(int n, int l)
+    public static IEnumerable<Tuple<ulong, int>> CreateStream(int n, int l)
     {
         Random rnd = new Random();
         ulong a = 0UL;
