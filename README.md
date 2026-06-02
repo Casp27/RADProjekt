@@ -41,7 +41,7 @@ Giver output som:
 |---|---|
 | `Del_1_Opgave_1.cs` | Multiply-Shift og Multiply-Mod-Prime hashfunktioner |
 | `Del_1_Opgave_2_Og_3.cs` | Hashtabel med chaining og beregning af kvadratsummer |
-| `Del_2_Opgave_4.cs` | 4-universel hashfunktion g(x) og Count-Sketch hashfunktioner h og s |
+| `Del_2_Opgave_4_Og_5.cs` | 4-universel hashfunktion g(x) og Count-Sketch hashfunktioner h og s |
 | `Del_2_Opgave_6.cs` | Count-Sketch implementering |
 | `Del_2_Opgave_7.cs` | Eksperimenter med Count-Sketch |
 | `Del_2_Opgave_8.cs` | Eksperimenter med betydning af m |
