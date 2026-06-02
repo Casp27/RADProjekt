@@ -2,6 +2,7 @@
 
 ## Krav
 - .NET 8.0 SDK
+- ScottPlot 5.1.58
 
 ## Sådan kører du projektet
 
