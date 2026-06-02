@@ -15,10 +15,13 @@ dotnet run -- [opgave]
 
 | Kommando | Beskrivelse |
 |---|---|
-| `dotnet run -- 1` | Opgave 1 — Hashfunktioner (Multiply-Shift og Multiply-Mod-Prime) |
-| `dotnet run -- 2` | Opgave 2 og 3 — Hashtabel med chaining og kvadratsummer |
-| `dotnet run -- 3` | Opgave 4 og 5 — 4-universel hashfunktion og Count-Sketch hashfunktioner |
-........ MANGLER SIDSTE OPGAVER
+| `dotnet run -- 1` | Opgave 1 |
+| `dotnet run -- 2` | Opgave 2 og 3 |
+| `dotnet run -- 3` | Opgave 4 og 5 |
+| `dotnet run -- 6` | Opgave 6 |
+| `dotnet run -- 7` | Opgave 7 |
+| `dotnet run -- 8` | Opgave 8 |
+
 
 ## Eksempel
 
