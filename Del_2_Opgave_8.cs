@@ -112,7 +112,7 @@ class Opgave8
         int n = 1_000_000;
         int l = 25;
 
-        int[] ts = [5, 20];
+        int[] ts = [5, 19];
 
         Console.WriteLine("--- Running Opgave 8 ---");
 
